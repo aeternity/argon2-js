@@ -2,7 +2,11 @@
   "name": "@aeternity/argon2",
   "version": "0.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "node.js",
+  "types": "index.d.ts",
+  "browser": {
+    "node.js": "./browser.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,5 +19,9 @@
   "bugs": {
     "url": "https://github.com/aeternity/argon2-js/issues"
   },
-  "homepage": "https://github.com/aeternity/argon2-js#readme"
+  "homepage": "https://github.com/aeternity/argon2-js#readme",
+  "dependencies": {
+    "@aeternity/argon2-browser": "^0.1.2",
+    "argon2": "^0.28.7"
+  }
 }
